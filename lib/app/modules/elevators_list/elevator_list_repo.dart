@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:Rocket_Elevators/app/core/properties.dart';
+import 'package:rocket_elevators/app/core/properties.dart';
 import 'package:get/instance_manager.dart';
 import 'package:http/http.dart' as http;
 

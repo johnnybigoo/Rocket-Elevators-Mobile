@@ -1,6 +1,6 @@
 import 'package:email_validator/email_validator.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:Rocket_Elevators/app/core/message_labels.dart';
+import 'package:rocket_elevators/app/core/message_labels.dart';
 import 'package:get/instance_manager.dart';
 
 class CupertinoEmailField extends StatefulWidget {
@@ -37,6 +37,10 @@ class _CupertinoEmailFieldState extends State<CupertinoEmailField> {
       CupertinoTextFormFieldRow(
         controller: widget.controller,
         placeholder: 'Email',
+        style: (
+            DefaultTextStyle.of(context).style.apply(fontSizeFactor: 1.25)
+        ),
+
         // prefix: Icon(CupertinoIcons.mail),
         keyboardType: TextInputType.emailAddress,
         // suffix: widget.controller.text.isEmpty
@@ -47,7 +51,7 @@ class _CupertinoEmailFieldState extends State<CupertinoEmailField> {
         //       ),
         decoration: BoxDecoration(
           color: CupertinoColors.extraLightBackgroundGray,
-          border: Border.all(color: CupertinoColors.lightBackgroundGray, width: 2),
+          border: Border.all(color: CupertinoColors.extraLightBackgroundGray, width: 6),
           borderRadius: BorderRadius.circular(6),
         ),
         validator: (email) =>

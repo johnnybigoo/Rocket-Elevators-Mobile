@@ -5,10 +5,10 @@
 
 // @dart = 2.12
 
-// When `package:Rocket_Elevators/app/app_driver.dart` defines `main`, that definition is shadowed by the definition below.
-export 'package:Rocket_Elevators/app/app_driver.dart';
+// When `package:rocket_elevators/app/app_driver.dart` defines `main`, that definition is shadowed by the definition below.
+export 'package:rocket_elevators/app/app_driver.dart';
 
-import 'package:Rocket_Elevators/app/app_driver.dart' as entrypoint;
+import 'package:rocket_elevators/app/app_driver.dart' as entrypoint;
 import 'dart:io'; // flutter_ignore: dart_io_import.
 import 'package:path_provider_android/path_provider_android.dart';
 import 'package:path_provider_linux/path_provider_linux.dart';

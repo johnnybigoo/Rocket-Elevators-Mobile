@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:Rocket_Elevators/app/core/theme.dart';
+import 'package:rocket_elevators/app/core/theme.dart';
 import 'package:get/get_navigation/src/root/get_cupertino_app.dart';
 
 

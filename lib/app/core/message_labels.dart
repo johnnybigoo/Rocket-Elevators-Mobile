@@ -1,7 +1,7 @@
 
 class MessageLabels {
   final _EMAIL_FORMAT_FIELD_LOGIN = "Please, type the email properly";
-  final _OPSS_TITLE = "OOps..";
+  final _OPSS_TITLE = "Oops..";
   final _AUTHENTICATION_FAIL_CONTENT = "User not found or Inexistent.";
   final _ELEVATORS_NOT_FOUND_YET = "Elevators not found or Inexistent.";
   final _ELEVATORS_ACTIVATION_CONFIRMATION = "Are you sure?";

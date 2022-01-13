@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:Rocket_Elevators/app/core/message_labels.dart';
-import 'package:Rocket_Elevators/app/core/properties.dart';
-import 'package:Rocket_Elevators/app/core/routes.dart';
-import 'package:Rocket_Elevators/app/modules/login/components/cupertino_email_field.dart';
+import 'package:rocket_elevators/app/core/message_labels.dart';
+import 'package:rocket_elevators/app/core/properties.dart';
+import 'package:rocket_elevators/app/core/routes.dart';
+import 'package:rocket_elevators/app/modules/login/components/cupertino_email_field.dart';
 import 'package:get/instance_manager.dart';
 import 'package:get/route_manager.dart';
 
@@ -31,8 +31,9 @@ class _LoginViewMaterialState extends State<LoginViewCupertino> {
   Widget build(BuildContext context) => CupertinoPageScaffold(
       navigationBar: CupertinoNavigationBar(middle: Text(_properties.appTitle)),
       resizeToAvoidBottomInset: false,
-      backgroundColor: Color.fromRGBO(240, 241, 247, 1),
+      backgroundColor: CupertinoColors.lightBackgroundGray,
       child: SafeArea(
+
         child: Center(
             child: Column(children: [
 
@@ -46,14 +47,16 @@ class _LoginViewMaterialState extends State<LoginViewCupertino> {
               child: Form(
                   key: _formKey,
                   child: SingleChildScrollView(
-                      padding: EdgeInsets.all(16),
+                      padding: EdgeInsets.all(18),
                       child: CupertinoEmailField(controller: _emailController)))),
           Flexible(
               fit: FlexFit.tight,
               child: Container(
+                // temp change
                   width: double.infinity,
                   alignment: Alignment.center,
                   child: Material(
+                    color: CupertinoColors.systemBlue,
                     child: InkWell(
                         child: const Image(
                           image: AssetImage('assets/elevator-btn.png'),
@@ -63,7 +66,6 @@ class _LoginViewMaterialState extends State<LoginViewCupertino> {
                           var checkEmail = _validateEmail(context, _formKey.currentState);
                           FocusScope.of(context).unfocus();
                           if (checkEmail) {
-                                    // @formatter:off
                                     _controller
                                         .authentication(_emailController.text.trim())
                                         .then((value) =>
@@ -73,7 +75,6 @@ class _LoginViewMaterialState extends State<LoginViewCupertino> {
                                         title: _messages.opss_fail_title,
                                         middleText:_messages.auth_fail_content)
                                     );
-                            // @formatter:on
                           }
                         }),
                   )))

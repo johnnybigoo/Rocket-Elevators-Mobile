@@ -1,0 +1,4 @@
+#Thu Jan 13 00:04:17 EST 2022
+base.0=/Users/Jones_Mac/CodeBoxx/Odyssey/Week-14/rocket_elevators_mobile/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

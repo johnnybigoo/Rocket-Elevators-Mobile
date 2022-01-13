@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:Rocket_Elevators/app/core/components/custom_indicator.dart';
-import 'package:Rocket_Elevators/app/core/labels.dart';
-import 'package:Rocket_Elevators/app/core/message_labels.dart';
-import 'package:Rocket_Elevators/app/modules/elevators_list/components/custom_sliver_appbar.dart';
-import 'package:Rocket_Elevators/app/modules/elevators_list/components/sliver_listview.dart';
+import 'package:rocket_elevators/app/core/components/custom_indicator.dart';
+import 'package:rocket_elevators/app/core/labels.dart';
+import 'package:rocket_elevators/app/core/message_labels.dart';
+import 'package:rocket_elevators/app/modules/elevators_list/components/custom_sliver_appbar.dart';
+import 'package:rocket_elevators/app/modules/elevators_list/components/sliver_listview.dart';
 import 'package:get/instance_manager.dart';
 import 'package:get/route_manager.dart';
 import 'package:get/state_manager.dart';

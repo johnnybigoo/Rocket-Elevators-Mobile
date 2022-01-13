@@ -1,4 +1,4 @@
-import 'package:Rocket_Elevators/app/modules/login/login_repo.dart';
+import 'package:rocket_elevators/app/modules/login/login_repo.dart';
 import 'package:get/instance_manager.dart';
 
 class LoginService {

@@ -1,8 +1,8 @@
 import 'package:animations/animations.dart';
 import 'package:flutter/material.dart';
-import 'package:Rocket_Elevators/app/core/properties.dart';
-import 'package:Rocket_Elevators/app/modules/elevators_list/entity/elevator.dart';
-import 'package:Rocket_Elevators/app/modules/elevators_list/view/material/elevator_detail_view_material.dart';
+import 'package:rocket_elevators/app/core/properties.dart';
+import 'package:rocket_elevators/app/modules/elevators_list/entity/elevator.dart';
+import 'package:rocket_elevators/app/modules/elevators_list/view/material/elevator_detail_view_material.dart';
 import 'package:get/instance_manager.dart';
 import 'package:get/route_manager.dart';
 
