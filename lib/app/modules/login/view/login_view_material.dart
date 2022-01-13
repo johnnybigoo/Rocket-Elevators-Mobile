@@ -1,20 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_01_alpha/app/core/message_labels.dart';
 import 'package:flutter_01_alpha/app/core/properties.dart';
 import 'package:flutter_01_alpha/app/core/routes.dart';
-import 'package:flutter_01_alpha/app/modules/login/components/email_field/email_field.dart';
+import 'package:flutter_01_alpha/app/modules/login/components/material_email_field.dart';
 import 'package:get/instance_manager.dart';
 import 'package:get/route_manager.dart';
 
-import 'login_controller.dart';
+import '../login_controller.dart';
 
-class LoginView extends StatefulWidget {
+class LoginViewMaterial extends StatefulWidget {
   @override
-  _LoginViewState createState() => _LoginViewState();
+  _LoginViewMaterialState createState() => _LoginViewMaterialState();
 }
 
-class _LoginViewState extends State<LoginView> {
+class _LoginViewMaterialState extends State<LoginViewMaterial> {
   final _formKey = GlobalKey<FormState>();
   final _emailController = TextEditingController();
   final _properties = Get.find<Properties>();
@@ -29,7 +28,10 @@ class _LoginViewState extends State<LoginView> {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-      appBar: AppBar(title: Text(_properties.appTitle), centerTitle: true),
+      appBar: AppBar(
+        title: Text(_properties.appTitle),
+        // centerTitle: true,
+      ),
       body: Center(
           child: Column(children: [
         Flexible(
@@ -43,7 +45,7 @@ class _LoginViewState extends State<LoginView> {
                 key: _formKey,
                 child: SingleChildScrollView(
                     padding: EdgeInsets.all(16),
-                    child: EmailField(controller: _emailController)))),
+                    child: MaterialEmailField(controller: _emailController)))),
         Flexible(
             fit: FlexFit.tight,
             child: Container(
@@ -51,7 +53,7 @@ class _LoginViewState extends State<LoginView> {
                 width: double.infinity,
                 alignment: Alignment.center,
                 child: InkWell(
-                    child: Image(image: AssetImage('assets/elevator-btn.png')),
+                    child: const Image(image: AssetImage('assets/elevator-btn.png')),
                     onTap: () {
                       var checkEmail = _validateEmail(context, _formKey.currentState);
                       FocusScope.of(context).unfocus();
@@ -63,7 +65,7 @@ class _LoginViewState extends State<LoginView> {
                                 value
                                     ? Get.toNamed(Routes.ELEVATOR_LIST_URL)
                                     : Get.defaultDialog(
-                                    title: _messages.auth_fail_title,
+                                    title: _messages.opss_fail_title,
                                     middleText:_messages.auth_fail_content)
                                 );
                         // @formatter:on
