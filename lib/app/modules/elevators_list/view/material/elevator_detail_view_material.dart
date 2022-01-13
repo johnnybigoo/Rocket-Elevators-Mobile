@@ -2,11 +2,11 @@ import 'dart:io';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_01_alpha/app/core/components/custom_modal.dart';
-import 'package:flutter_01_alpha/app/core/labels.dart';
-import 'package:flutter_01_alpha/app/core/message_labels.dart';
-import 'package:flutter_01_alpha/app/core/properties.dart';
-import 'package:flutter_01_alpha/app/modules/elevators_list/entity/elevator.dart';
+import 'package:Rocket_Elevators/app/core/components/custom_modal.dart';
+import 'package:Rocket_Elevators/app/core/labels.dart';
+import 'package:Rocket_Elevators/app/core/message_labels.dart';
+import 'package:Rocket_Elevators/app/core/properties.dart';
+import 'package:Rocket_Elevators/app/modules/elevators_list/entity/elevator.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 

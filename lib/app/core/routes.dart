@@ -1,8 +1,8 @@
 import 'dart:io';
 
-import 'package:flutter_01_alpha/app/modules/elevators_list/view/material/elevator_list_view_material.dart';
-import 'package:flutter_01_alpha/app/modules/login/view/login_view_cupertino.dart';
-import 'package:flutter_01_alpha/app/modules/login/view/login_view_material.dart';
+import 'package:Rocket_Elevators/app/modules/elevators_list/view/material/elevator_list_view_material.dart';
+import 'package:Rocket_Elevators/app/modules/login/view/login_view_cupertino.dart';
+import 'package:Rocket_Elevators/app/modules/login/view/login_view_material.dart';
 import 'package:get/route_manager.dart';
 
 import 'bindings/elevator_list_bindings.dart';

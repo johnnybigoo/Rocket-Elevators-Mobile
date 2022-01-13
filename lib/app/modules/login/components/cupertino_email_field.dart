@@ -1,6 +1,6 @@
 import 'package:email_validator/email_validator.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_01_alpha/app/core/message_labels.dart';
+import 'package:Rocket_Elevators/app/core/message_labels.dart';
 import 'package:get/instance_manager.dart';
 
 class CupertinoEmailField extends StatefulWidget {

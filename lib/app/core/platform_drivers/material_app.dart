@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_01_alpha/app/core/theme.dart';
+import 'package:Rocket_Elevators/app/core/theme.dart';
 import 'package:get/get.dart';
 
 import '../properties.dart';

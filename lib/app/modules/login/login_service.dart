@@ -1,4 +1,4 @@
-import 'package:flutter_01_alpha/app/modules/login/login_repo.dart';
+import 'package:Rocket_Elevators/app/modules/login/login_repo.dart';
 import 'package:get/instance_manager.dart';
 
 class LoginService {
