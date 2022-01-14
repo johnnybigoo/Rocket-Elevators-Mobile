@@ -1,11 +1,10 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="http://rocketelevators-jt.com/assets/_rocket/R2-3c6296bf2343b849b947f8ccfce0de61dd34ba7f9e2a23a53d0a743bc4604e3c.png">
-    <img src="http://rocketelevators-jt.com/assets/_rocket/R2-3c6296bf2343b849b947f8ccfce0de61dd34ba7f9e2a23a53d0a743bc4604e3c.png" alt="Logo" width="500" height="200">
+  <a href="https://rocket-elevators-devops.herokuapp.com/assets/_rocket/R2-3c6296bf2343b849b947f8ccfce0de61dd34ba7f9e2a23a53d0a743bc4604e3c.png">
+    <img src="https://rocket-elevators-devops.herokuapp.com/assets/_rocket/R2-3c6296bf2343b849b947f8ccfce0de61dd34ba7f9e2a23a53d0a743bc4604e3c.png" alt="Logo" width="500" height="200">
   </a>
-
-  <h3 align="center">Rocket Elevators Foundation
+  <h3 align="center">Rocket Elevators Mobile
 </h3>
   
   <p align="center">
@@ -20,7 +19,13 @@
 
 Rocket Elevators Mobile is the 14th week project for the Odyssey 14 weeks program in CodeBoxx. 
 
-By this week we had to create a Machine learning API using the Azure Api **Speech**. We used our voice to simulate a conversation that happen inside an elevator and see how well it can detect our voice and if it was able to translate it to text. From the **Speech** Service offered by Azure we have used *Speech-to-Text* and *Speaker Recognition*.
+By this week we had to create a Mobile App that will allow our employees to change the status of the Elevator in `Offline`, `Intervention` or `Maintenance` to
+back to `Online`.
+
+A variety of programming lnaguage was suggested to us, I have choose Flutter, for the reason to be a hybrid framework and use the same code for both Mobile OS
+systems.
+
+To chaange the status of our elevators, we must use the endpoints on our REST API, developped in C# in the past weeks.  
 
 <br>
 
@@ -30,69 +35,65 @@ By this week we had to create a Machine learning API using the Azure Api **Speec
 
 <br>
 
-### Exemple of how the  *Speech Api* actually work:
+### Peview:
+<hr><br>
 
+<img src="gifs/mobile-preview-1.gif" width="848" height="639"/>
 
-First we create a *.wav* sound in this specific specs :
-|# Rate                         |Format         |Channel  |
-|-------------------------------|---------------|---------|
-|`16000Hz`                        |`16-bit`       |`1(Mono)`|
+<br><hr>
 
-We then enroll the *.wav* sound and extract them for modeling and then send to the database. Once enrolled we can use an other sample and let the **API** compare the 2 sounds together and then give a results based on the modeling from the first data we gave. The 2 major result are `Accepted (score > 0.5)` and `Rejected (score < 0.5)`.
-
-> **Pros:** The **Speech-To-Text** worked really well and the transcription doesnt differ a lot from the true result.
-> 
-> **Cons:** The **Speech API** from  **Azure** as some flaws where it wont recognize enrolled voice from conversation.
 
 ## Installation
 
 Clone or download the .zip for this project. 
 
-Here are the commands that will have to be entered in your terminal to start the server:
-- mySQL server start
-- ruby -v (To check if a corresponding version need to be installed)
-- rails -v (To check if a corresponding version need to be installed)
-- bundle install (To install all the necessary Gems)
-- Create in the root `.env` file and add assign to variable `AZURE_KEY=` your Azure speech service key.
-- Check in the directory for config/database.yml and if necessary replace the database password by yours.
-- rails db:create
-- rails s
+I'm using IntelliJ IDEA as IDE for this project, the steps below is realted to this IDE:
 
-<br>
+- If you are on Windows PC/Laptop, follow this link: 
+  <br>[Flutter - Win](https://docs.flutter.dev/get-started/install/windows)
 
-Here are the commands that will have to be entered in your terminal when modifications are made in the database:
-- Ctrl + C (to stop the server)
-- rails db:migrate reset
-- rails db:seed
+- For Mac, follow this one:
+  <br>[Flutter - MacOS](https://docs.flutter.dev/get-started/install/macos)
+
+- For Linus, this one:
+  <br>[Flutter - MacOS](https://docs.flutter.dev/get-started/install/linux)
+
+- And last but not least, ChromeOS !!!
+  <br>[Flutter - ChromeOS](https://docs.flutter.dev/get-started/install/chromeos)
+
+
+- After install that you can create a defaut MyApp, following the tutorial, you can always use this defaut project to create your new ones.
+
+- Don't forget to install Android Studio or Xcode, or even both in MacOs to to instantiate your emulator/simulator.
+  <br>[Android Studio](https://developer.android.com) 
+  <br>[Xcode](https://developer.apple.com/xcode/)
+
 
 <br>
 
 ### Testing 
-You don't need to be logged in, just click in SPEECH SERVICES menu tabe and choose service you desire to test.
+You need to be autheticate on it using one of the Employees emails: Here follows some emails for testing.
 
-> Put the audio file on your local drive to test the *speaker transcribe*.
+``` 
+nicolas.genest@codeboxx.biz
 
-<br>
+mathieu.houde@codeboxx.biz
 
-[Click here to download the audio samples](https://github.com/johnnybigoo/ML-Audio-Samples.git)
+patrick.thibault@codeboxx.biz
 
-<br>
+francis.patry-jessop@codeboxx.biz
 
-- `Enroll` : The *enroll* section is used to create your voice profile inside the Database.
-- `Upload` : The *Upload* section is used to test this audio clip against a voice profile.
-- `Verify` : With the *verify* section you can test your Newly enroll profil ( or an older one) against and audio clip and verify if your test match !
-
-<br>
-
-To access the database, use Dbeaver or MySQLWorkbench, which shows a history of data stored in the server. The fictitious and real data covers the last 3 years of activity from companies. Graphical representations and charts will also be available in the stats page of the website. 
+```
 
 <br>
+
 
 ## Built With
 
 * [Dart](https://dart.dev/)
 * [Flutter](https://flutter.dev/)
 * [Microsoft ASPNET Core](https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-6.0)
+* [Intellij IDEA](https://www.jetbrains.com/idea/download)
 
 
 <br>
